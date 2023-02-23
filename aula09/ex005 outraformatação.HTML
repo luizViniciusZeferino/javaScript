@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{ 
+        background-color: rgb(108, 76, 226);
+        color: white;
+        font: normal 18pt Arial
+        }
+</style>
+<body>
+    <h1> Iniciando estudos em DOM</h1>
+    <p> Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>Dom</strong> em JavaScript.</p>
+    <div id = 'msg'>Olá mundo...</div> 
+    <div id = 'name'> luiz é muito lindo</div>
+
+     <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] // puxando os dois paragrafos ali de cima
+        var d = window.document.getElementById ('msg') 
+        var a = window.document.querySelectorAll('div#name')
+        corpo.style.background = 'black' // criei a variavel corpo e estou puxando ela para fazer a alteração de cor de fundo.
+        p1.style.color = 'blue' // estou puxando o primeiro parágrafo para mudar de cor
+        d.style.color = 'green' // coloquei um id na div dei um nome a ele criei a váriavel getElementById e depois puxei a váriavel e fiz uma certa formatação.
+        a.style.background = 'black'     
+     </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { 
+            font: normal 18pt Arial;
+        }
+        input { 
+            font: normal 18pt Arial;
+            width: 100px; /* largura do input */ 
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+        div#res { 
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()"> 
+    <div id="res">Resultado </div>
+<script>
+    var nome = window.prompt('Digite seu nome')
+    window.alert(`Olá ${nome}, seja bem vindo(a)!` ) 
+    window.alert('Em seguida digite os números desejados! ') 
+    function somar() { 
+        var tn1 = window.document.getElementsByTagName('input')[0] // Posso usar esse como o getelementById porém nest digo qual estou pegando pois esta no plural.
+        var tn2 = window.document.getElementById('txtn2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(tn1.value) // value é o valor que esta dentro da caixa de testo tn1
+        var n2 = Number(tn2.value)
+        var s = n1 + n2 
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>` 
+     }
+</script>
+</body>
+</html> 

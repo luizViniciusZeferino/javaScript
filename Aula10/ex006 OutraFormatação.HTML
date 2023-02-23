@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background: rgb(126, 214, 126);
+            color: white;
+            width: 200px; /* largura */
+            height: 200px; /* altura */ 
+            line-height: 200px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >  <!--- quando eu clicar na minha div 'onclick a aspas' onclick vai chamar o nome da ação que quero por -->
+        clique aqui...
+    </div>
+
+    <script>
+         var a = window.document.getElementById("area") // eu vou criar um objeto chamado a e ele vai ser a ligação do objeto a dentro do JS com o elemnto 'div id= area' que esta dentro do html  
+        a.addEventListener('click', clicar)             // com a variavel fora de uma função eu consigo usar ela para todas as outras funções.
+        a.addEventListener('mouseenter' , entrar)
+        a.addEventListener('mouseout' , Sair )
+        function clicar() { // aqui estou chamando o 'clicar que esta ali em cima'      
+            a.innerText = "Funciona" // aqui vai mudar o conteudo do espaço para 'clicou' após que ocorrer o click
+            a.style.background = 'red' 
+        }
+        function entrar() {           // estou puxando o 'entrar' de onmouseenter
+           a.innerText = "Entrou"     // aqui estou falando oque vai acontecer assim que o mouse entrar 
+        }
+        function Sair() {             // estou puxando o 'sair de onmouseout'
+           a.innerText = "Saiu"       // aqui dizendo oque vai acontecer assim que o mouse sair da área
+           a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

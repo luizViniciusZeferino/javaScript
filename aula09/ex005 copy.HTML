@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{ 
+        background-color: rgb(0, 0, 0);
+        color: rgb(241, 238, 238);
+        font: normal 18pt Arial
+        }
+</style>
+<body>
+    <h1> Iniciando estudos em DOM</h1>
+    <p> Aqui vai o <strong> resultado </strong></p>
+    <p>Aprendendo a usar <strong> Dom</strong> em JavaScript. </p>
+    <div>Clique em mim</div>
+     <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0] // puxando os dois paragrafos ali de cima 
+        window.document.write('Escrevo aqui: ' + p1.innerText) // innerText é o texto que esta dentro do preimeiro paragrafo. Caso eu queira que puxe o negrito junto por innerHTML.
+     </script>
+</body>
+</html>
