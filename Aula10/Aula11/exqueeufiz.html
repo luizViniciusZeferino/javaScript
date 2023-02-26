@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        div {
+            width: 500px; /* lagura */
+            height: 500px; /* altura */
+            background-color: rgb(248, 237, 237);
+        }
+    </style>
+    <div>
+        <h1> Sistema de Nacionalidade </h1>
+        Preencha com sua Nacionalidade: <input type="text" id="text">
+        <input type="button" value="Confirmar" onclick="clicar()">
+        <div id='res'></div>
+        <script>
+            function clicar() {
+                var txt = window.document.getElementById("text")
+                var val = text.value // criei uma variavel puxando o valor(value) do meu input(txt)
+                var res = window.document.getElementById('res') // criando uma variavel para a div res 
+                res.innerHTML = `<p> Sua nacionalidade é ${val}! </p>` // puxando variavel que mostra o valor do input
+                if (val != "Brasileiro") {
+                    res.innerHTML += `<p> Você não é Brasileiro! </p>`
+                }
+                res.innerHTML += `<p> Sempre tenha orgulho de sua nacionalidade! </p>`
+            }
+        </script>
+    </div>
+</body>
+
+</html>
