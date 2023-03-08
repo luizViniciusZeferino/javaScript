@@ -1,5 +1,3 @@
-
-<h1> Sistema de Nacionalidade </h1>
 var velocidade = 60.1
 console.log(`A velocidade do carro é ${velocidade}Km/h`)
 if (velocidade > 60) { // SE a VELOCIDDADE for MAIOR  que 60 MULTADO. CLASSIFICADO COMO CONDIÇÃO SIMPLES.
