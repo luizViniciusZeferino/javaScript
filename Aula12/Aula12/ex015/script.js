@@ -48,3 +48,5 @@ function verificar() {
         res.appendChild(img) // appendeChild significa add um elemento que nesse caso seria o img 
     }
 }
+
+

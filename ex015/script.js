@@ -11,17 +11,17 @@ function verificar() {
         var img = document.createElement('img') 
         img.setAttribute('id', 'foto' ) // mesma coisa que fazer img id = foto 
         var genero = '' // váriavel vazia pq pode ser tanto homem quanto mulher 
-        if (fsex[0].checked) { // se oque estiver marcado for o fsex0(homem) o zero esta puxando o primeiro input do js
+        if (fsex[0].checked) { // se oque estiver marcado for o fsez0(homem) 
             genero = 'Homem'
-            if (idade >=0 && idade < 13) { 
+            if (idade >=0 && idade < 10) { 
                 // criança
-                img.setAttribute('src', 'Foto-crianca_1.png') 
+                img.setAttribute('src', 'Foto-crianca 1.png') 
             } else if (idade < 21 ) {
                 // jovem
-                img.setAttribute('src', 'Foto-adolescente_1.png') 
+                img.setAttribute('src', 'Foto-adolescente 1.png') 
             } else if (idade < 50 ) {
                 // Adulto 
-                img.setAttribute('src', 'Foto-adulto_1.png') 
+                img.setAttribute('src', 'Foto-adulto 1.png') 
             } else {
                 // idoso 
                 img.setAttribute('src', 'Foto-velho.png') 
@@ -31,16 +31,12 @@ function verificar() {
             genero = 'Mulher'
             if (idade >=0 && idade < 10) { 
                 // criança
-                img.setAttribute('src', 'Foto-crianca.png')
             } else if (idade < 21 ) {
                 // jovem
-                img.setAttribute('src', 'Foto-adolescente.png')
             } else if (idade < 50 ) {
                 // Adulto 
-                img.setAttribute('src', 'Foto-adulto.png')
             } else {
                 // idoso 
-                img.setAttribute('src', 'Foto-velha.png')
             }
         }
         res.style.textAlign = 'center' // centralizar div 
@@ -48,3 +44,5 @@ function verificar() {
         res.appendChild(img) // appendeChild significa add um elemento que nesse caso seria o img 
     }
 }
+
+
