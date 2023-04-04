@@ -15,7 +15,7 @@ var diaSem = hora.getDay()
  switch(diaSem) {
     case 0: 
         console.log('Domingo')
-        break
+        break 
     case 1: 
         console.log('Segunda')
         break
